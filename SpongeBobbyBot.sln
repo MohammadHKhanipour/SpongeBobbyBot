@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31424.327
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpongeBobbyBot", "SpongeBobbyBot\SpongeBobbyBot.csproj", "{EDE20A85-2FB1-40BC-9B13-E5242A309DEA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EDE20A85-2FB1-40BC-9B13-E5242A309DEA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EDE20A85-2FB1-40BC-9B13-E5242A309DEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EDE20A85-2FB1-40BC-9B13-E5242A309DEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EDE20A85-2FB1-40BC-9B13-E5242A309DEA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9B732ADC-49F9-4CD7-A7E7-F9E7E26751D9}
+	EndGlobalSection
+EndGlobal
