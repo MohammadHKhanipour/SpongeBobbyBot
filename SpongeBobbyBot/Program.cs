@@ -72,9 +72,10 @@ namespace SpongeBobbyBot
 
                         await BotClient.SendTextMessageAsync(e.Message.Chat.Id, "FINISHED!");
                     }
-                    catch (Exception)
+                    catch (Exception ex)
                     {
                         await BotClient.SendTextMessageAsync(e.Message.Chat.Id, "Something went wrong!");
+                        Console.WriteLine($"{DateTime.Now}: {ex.Message}\n");
                     }
                 }
 
@@ -98,10 +99,11 @@ namespace SpongeBobbyBot
                         }
 
                         await BotClient.SendTextMessageAsync(e.Message.Chat.Id, "FINISHED!");
-                    }   
-                    catch (Exception)
+                    }
+                    catch (Exception ex)
                     {
                         await BotClient.SendTextMessageAsync(e.Message.Chat.Id, "Something went wrong!");
+                        Console.WriteLine($"{DateTime.Now}: {ex.Message}\n");
                     }
                 }
 
@@ -125,9 +127,10 @@ namespace SpongeBobbyBot
 
                         await BotClient.SendTextMessageAsync(e.Message.Chat.Id, "FINISHED!");
                     }
-                    catch (Exception)
+                    catch (Exception ex)
                     {
                         await BotClient.SendTextMessageAsync(e.Message.Chat.Id, "Something went wrong!");
+                        Console.WriteLine($"{DateTime.Now}: {ex.Message}\n");
                     }
                 }
 
