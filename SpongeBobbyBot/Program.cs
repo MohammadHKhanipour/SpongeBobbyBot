@@ -134,11 +134,30 @@ namespace SpongeBobbyBot
                     }
                 }
 
+                if (e.Message.Text.StartsWith("/add"))
+                {
+                    try
+                    {
+                        var inputs = e.Message.Text.Split('(')[1].Split(')')[0].Split(',').Select(x => Convert.ToDecimal(x));
+
+                        Console.WriteLine($"{DateTime.Now}: Adding");
+
+                        await BotClient.SendTextMessageAsync(e.Message.Chat.Id, inputs.Sum().ToString());
+
+                    }
+                    catch (Exception ex)
+                    {
+                        await BotClient.SendTextMessageAsync(e.Message.Chat.Id, "Something went wrong!");
+                        Console.WriteLine($"{DateTime.Now}: {ex.Message}\n");
+                    }
+                }
+
                 if (e.Message.Text.EndsWith("@SpongeBobbyBot"))
                 {
                     await BotClient.SendTextMessageAsync(e.Message.Chat.Id, "Wrong format, bot doesn't need to be mentioned");
                 }
             }
+
             else
             {
                 await BotClient.SendTextMessageAsync(e.Message.Chat.Id, "Not Supported (Yet!)");
