@@ -140,9 +140,11 @@ namespace SpongeBobbyBot
                     {
                         var inputs = e.Message.Text.Split('(')[1].Split(')')[0].Split(',').Select(x => Convert.ToDecimal(x));
 
-                        Console.WriteLine($"{DateTime.Now}: Adding");
+                        Console.WriteLine($"{DateTime.Now}: Numeric Calculations");
 
-                        await BotClient.SendTextMessageAsync(e.Message.Chat.Id, inputs.Sum().ToString());
+                        string message = $"Count: {inputs.Count()}\nSum: {inputs.Sum()}\nAverage: {inputs.Average().ToString("0.00")}";
+
+                        await BotClient.SendTextMessageAsync(e.Message.Chat.Id, message);
 
                     }
                     catch (Exception ex)
