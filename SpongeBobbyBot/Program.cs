@@ -140,7 +140,7 @@ namespace SpongeBobbyBot
                     {
                         var inputs = e.Message.Text.Split('(')[1].Split(')')[0].Split(',').Select(x => Convert.ToDecimal(x));
 
-                        Console.WriteLine($"{DateTime.Now}: Numeric Calculations");
+                        Console.WriteLine($"{DateTime.Now}: Numeric Calculations\n");
 
                         string message = $"Count: {inputs.Count()}\nSum: {inputs.Sum()}\nAverage: {inputs.Average().ToString("0.00")}";
 
